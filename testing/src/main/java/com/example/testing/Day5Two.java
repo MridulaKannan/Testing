@@ -4,22 +4,21 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Day5One {
-
-	public static void main(String[] args) throws InterruptedException
+public class Day5Two {
+	public static void main(String[]args) throws InterruptedException
 	{
-		WebDriverManager.edgedriver().setup();
-		WebDriver driver = new EdgeDriver();
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
 		driver.get("https://j2store.net/free/");
 		driver.manage().window().maximize();
-		String title = driver.getTitle();
-		String OriTitle = "Home";
-		System.out.println(title);
-		if(OriTitle.equals(title))
+		String CurUrl = driver.getCurrentUrl();
+		String url = "https://j2store.net/free/";
+		System.out.println(url);
+		if(CurUrl.equals(url))
 		{
 			System.out.println("Valid");
 		}
@@ -27,16 +26,16 @@ public class Day5One {
 		{
 			System.out.println("Invalid");
 		}
-		WebElement find = driver.findElement(By.xpath("//*[@id=\"Mod112\"]/div/div/ul/li[1]/h4/a"));
-		System.out.println();
+		WebElement find = driver.findElement(By.partialLinkText("Clothing (5)"));
+//		find.click();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,1000)", "");
-		Thread.sleep(2000);
 		find.click();
-		String CurTitle = "Shop";
-		String t1 = driver.getTitle();
-		System.out.println(t1);
-		if(CurTitle.equals(t1))
+		System.out.println();
+		String url1 = "https://j2store.net/free/index.php/shop?filter_catid=11";
+		String CurUrl1 = driver.getCurrentUrl();
+		System.out.println(CurUrl1);
+		if(CurUrl1.equals(url1))
 		{
 			System.out.println("Valid");
 		}
@@ -46,8 +45,6 @@ public class Day5One {
 		}
 		Thread.sleep(5000);
 		driver.quit();
-		
 	}
-		
-}
 
+}
