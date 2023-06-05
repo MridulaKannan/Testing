@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-05T03:59:02Z" name="Default suite" finished-at="2023-06-05T03:59:28Z" duration-ms="25869">
+    <groups>
+    </groups>
+    <test started-at="2023-06-05T03:59:02Z" name="Default test" finished-at="2023-06-05T03:59:28Z" duration-ms="25869">
+      <class name="selenium.testDay7.Ques4">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:selenium.testDay7.Ques4@1972e513]" started-at="2023-06-05T09:29:02Z" name="beforeMethod" finished-at="2023-06-05T09:29:19Z" duration-ms="16085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="Login()[pri:0, instance:selenium.testDay7.Ques4@1972e513]" started-at="2023-06-05T09:29:19Z" name="Login" finished-at="2023-06-05T09:29:24Z" duration-ms="5279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="Logout()[pri:0, instance:selenium.testDay7.Ques4@1972e513]" started-at="2023-06-05T09:29:24Z" name="Logout" finished-at="2023-06-05T09:29:28Z" depends-on-methods="selenium.testDay7.Ques4.Login" duration-ms="4481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout -->
+      </class> <!-- selenium.testDay7.Ques4 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
