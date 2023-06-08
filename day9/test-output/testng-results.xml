@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-05T10:04:02Z" name="Suite" finished-at="2023-06-05T10:04:02Z" duration-ms="19">
+    <groups>
+    </groups>
+    <test started-at="2023-06-05T10:04:02Z" name="Test" finished-at="2023-06-05T10:04:02Z" duration-ms="19">
+      <class name="selenium.seleniumDay9.Ques5">
+        <test-method signature="test01()[pri:0, instance:selenium.seleniumDay9.Ques5@4445629]" started-at="2023-06-05T15:34:02Z" name="test01" finished-at="2023-06-05T15:34:02Z" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test01 -->
+        <test-method signature="test02()[pri:0, instance:selenium.seleniumDay9.Ques5@4445629]" started-at="2023-06-05T15:34:02Z" name="test02" finished-at="2023-06-05T15:34:02Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test02 -->
+      </class> <!-- selenium.seleniumDay9.Ques5 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
